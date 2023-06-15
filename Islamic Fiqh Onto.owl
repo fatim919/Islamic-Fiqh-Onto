@@ -1,0 +1,2130 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-158="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تدفع_الى -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تدفع_الى">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لأدائها -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لأدائها">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لتركها -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لتركها">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدى_بواسطة -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدى_بواسطة">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدي"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدي -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدي">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/desirable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/desirable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اسم الخاصية في اللغة العربية (يستحب له)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/notDesirable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/notDesirable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اسم الخاصية في اللغة العربية (لا يستحب له)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/required -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/required">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اسم الخاصية في اللغة العربية (يشترط فيه)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاحكام -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاحكام">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الحكم الشرعي عبارة عن خطاب الشارع المتعلق بأفعال المكلفين. وتنقسم الأحكام إلى أقسام مختلفة، وأهمها: الأحكام الوضعية والتكليفة. كما تتفرع الأحكام الشرعية إلى أولية وثانوية.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الإِيقاع: أوقعه فوقع. وأوقع فلانٌ بفلانٍ ما يكره: أي أحلَّه عليه وفي اصطلاح الفقهاء هو الإنشاء المستقل الذي لا يتوقف صحته ونفوذه على إنشاء مطاوع، فهو في مقابل العقد الذي حقيقته إنشاءان مرتبطان متلازمان</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لأدائها"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لتركها"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هو مصطلح دينيّ فقهيّ، له علاقة بتلك الأعمال الخاصّة الّتي أوجبها المولى تعالى على عبده،كما أنّ للعبادات معناً لغويّاً أعم من المعنى الفقهيّ الاصطلاحيّ، وهو مطلق الطّاعة مع الخضوع والتّذلّل لله</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العقود -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العقود">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هو ارتباط الإيجاب الصادر من أحد العاقدين بقبول الآخر على وجه يظهر أثره في المعقود عليه . في اللغة هو الربط والشد والإحكام والتوثيق والضمان والعهد، والجمع بين أطراف الشي‌ء.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدى_بواسطة"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاحكام"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العقود"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاحكام"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تدفع_الى"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هم الاشخاص الذين تحق لهم الزكاة.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هو أن يجعل الشخص لله تعالى على ذمته فعل شيء أو تركه، بحيث يقوله بصيغة يجب التقيد بها وشروط خاصة تتعلّق بالنذر وبالشخص الناذر.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العقود"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هو الحلف بالله تعالى، أو بأحد أسمائه المختصه به</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أداء_العمرة_والحج_في_اشهر_الحج -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أداء_العمرة_والحج_في_اشهر_الحج">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الافطار"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الجمع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_القتل"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_تعمد_الافطار"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_قتل_المؤمن"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مخيرة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مرتبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أن_يكون_لفظاً_دالاً_لمعنى_اليمين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أن_يكون_لفظاً_دالاً_لمعنى_اليمين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو المسافر الذي نفدت نفقته أو تلفت راحلته ولا يتمكّن معه من الرجوع إلى بلده وإن كان غنيّاً فيه.</rdfs:comment>
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q12486192"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_العمرة_والحج_في_سنة_واحدة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_العمرة_والحج_في_سنة_واحدة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_البراءة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_لافطار_في_شهر_رمضان_بعد_الزوال"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_معينة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحالف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أن_يكون_لفظاً_دالاً_لمعنى_اليمين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الانجاز"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تأديته_بأسم_لله"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_اللّه"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_ذمة_الاسلام"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_رسول_الله"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بها ما يقع تأكيداً وتحقيقاً للإخبار عن تحقّق أمرٍ أو عدم تحقّقه في الماضي أو الحال أو الاستقبال, وهي ليست محرّمة ولكنّها مكروهة بحدّ ذاتها، فيكره للمكلّف أن يحلف على شيء صدقاً أو أن يحلف على صدق كلامه.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الكاذبة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الكاذبة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بها ما يقع تأكيداً وتحقيقاً للإخبار عن تحقّق أمرٍ أو عدم تحقّقه في الماضي أو الحال أو الاستقبال, وهي محرّمة، بل قد تعتبر من المعاصي الكبيرة.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_أحد_المواقيت -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_أحد_المواقيت">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_مكّة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_مكّة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاقباض -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاقباض">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">إنَّ القبض شرط في صحة الوقف، فلو وقف ولم يقبض ثمّ مات كان ميراثاً.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الانجاز -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الانجاز">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التمكن -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التمكن">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التنجيز -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التنجيز">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد به ان لابد من انشاء الوقف منجزا بدون أي تردد ولا تعليق على شئ متوقع في المستقبل.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC)"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع"/>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اخذ الشارب</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اداء الاحرام بعد فريضة الظهر</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ازالة شعر الأبطين</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ازالة شعر العانة</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">التلبية بالصيغة</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">التلفظ بنية الاحرام مقارنة للتلبية</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الغسل</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تسريح شعر الراس</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تسريح شعر اللحية</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تقليم الاظافر</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تكرار التلبية حال الاحرام</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تنظيف الجسد</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ثوب الاحرام من القطن</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">دعاء الغسل</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">دعاء عند لبس ثوب الاحرام</untitled-ontology-158:desirable>
+        <untitled-ontology-158:desirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">رفع الصوت بالتلبية للرجال</untitled-ontology-158:desirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">استعمال الحناء قبل الاحرام</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الاحرام في الثوب الاسود</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">النوم على الفراش الاصفر</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">النوم على الوسادة الصفراء</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">النوم في الثياب المعلمة</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">النوم في الثياب الوسخة</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تلبية من يناديه</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:notDesirable rdf:datatype="http://www.w3.org/2001/XMLSchema#string">دخول الحمام</untitled-ontology-158:notDesirable>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">البلوغ</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الحرية</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">العقل</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المقدرة المعيشية بعد الرجوع</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">النفقة</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">امتلاك الوقت</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون مقتدر ماليا</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تخلية السرب</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">صحيح البدن</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هو الشخص الذي يذهب لزيارة مكان مقدس و تأدية بعض المناسك و العبادات فيه ويكون سفر طبيعي إما مشياً على الأقدام كما كان يجري في السابق أو بركوب وسيلة نقل، والحج موجود في معظم الديانات</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحالف -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحالف">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">البلوغ</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">التمكن</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الجد في اليمين</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">العقل</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">القصد</untitled-ontology-158:required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج">
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الدوام -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الدوام">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو مقتضى الوقف بحسب الطبع، والتوقيت خلاف مقتضى طبيعة الوقف.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة">
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد به السعي بين الصقا والمروة</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الصيغة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الصيغة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">حتى ينعقد النذر لا بد من تلفظه بصيغة شرعية محددة وهي بأن يقول الناذر: «لله عليّ أن أفعل كذا»</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الطواف_حول_البيت -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الطواف_حول_البيت">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بهم العاملزن عليها من قِبل النبيّ (صلّى الله عليه وآله) أو الإمام (عليه السلام) أو الحاكم الشرعي أو نائبه.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بهم من كان عليهم دين وعجزوا عن أدائه جاز أداء دينهم من الزكاة.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بهم من لا يملكوا مؤونة سنتهم اللائقة بحالهم لنفسهم وعائلتهم لا بالفعل ولا بالقوّة.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي">
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/"/>
+        <owl:sameAs rdf:resource="https://arz.wikipedia.org/wiki/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة">
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بهم طائفة من الكفّار يميلون إلى الإسلام أو يعينون المسلمين بإعطائهم الزكاة، أو يُؤمَن بذلك من شرّهم وفتنتهم.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المبيت_في_منى -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المبيت_في_منى">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بهم من تكون حالتهم أسوأ  من الفقراء كمن لا يملك قوته اليومي..</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">البلوغ</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">العقل</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الغنى</untitled-ontology-158:required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الناذر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الناذر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> الاختيار</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">البلوغ</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">العقل</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">القصد</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون محجور عليه</untitled-ontology-158:required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النحر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النحر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النية -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النية">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الواقف -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الواقف">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص"/>
+        <untitled-ontology-158:يؤدي rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الاختيار</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">البلوغ</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">العقل</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">القصد</untitled-ontology-158:required>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الواقف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاقباض"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التنجيز"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الدوام"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو ما كان وقفاً على شخص أو أشخاص كالوقف على أولاده و ذرّيته.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الواقف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاقباض"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التنجيز"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الدوام"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو ما كان على جهة ومصلحة عامة كالمساجد والقناطر والخانات، أو على عنوان عام كالفقراء والأيتام ونحوهما.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_المزدلفة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_المزدلفة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_عرفات -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_عرفات">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تأديته_بأسم_لله -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تأديته_بأسم_لله">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_أحد_المواقيت"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المبيت_في_منى"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_المزدلفة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_عرفات"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حلق_الشعر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/رمي_الجمرات"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو الحج الذي يقع على عاتق من سكن مكة، ومن يكون الفاصل بين منزله وبين مكّة أقلّ من ستة عشر فرسخاً.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أداء_العمرة_والحج_في_اشهر_الحج"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_العمرة_والحج_في_سنة_واحدة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_مكّة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المبيت_في_منى"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النحر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_المزدلفة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_عرفات"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حلق_الشعر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/رمي_الجمرات"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو الحج الذي يقع على من كان البعد بين أهله ومكّة  أكثر من ستة عشر فرسخاً.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_أحد_المواقيت"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المبيت_في_منى"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_المزدلفة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_عرفات"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حلق_الشعر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/رمي_الجمرات"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو الحج الذي يقع على أهل مكّة, ومن يكون البعد بين أهله ومكة أقلّ من ستة عشر فرسخا.ً.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حلق_الشعر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حلق_الشعر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/رمي_الجمرات -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/رمي_الجمرات">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتزكية_الروح"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_البلاء"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_الغضب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_المال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لشفاء"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لصلاح_المجتمع"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لعلاج_البخل"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحاربة_الفقر"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحبة_لله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شرطا_لقبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لسلب_البركة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للحرمان_من_الرحمة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتزكية_الروح"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتكفيّر_الذنوب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_البلاء"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_الغضب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحبة_لله"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لسلب_البركة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للحرمان_من_الرحمة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بها  الحنطة والشعير والتمر والزبيب.,وتعتبر نوع من انواع زكاة الاموال.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتكفيّر_الذنوب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحاربة_الفقر"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحبة_لله"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لسلب_البركة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بها الزكاة التي يجب تاديتها في ايام عيد الفطر المبارك.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحاربة_الفقر"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شرطا_لقبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بها  الغنم بقسميها المعز والضأن، والإبل، والبقر ومنه الجاموس, وتعتبر نوع من انواع زكاة الاموال.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_الغضب"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_المال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لصلاح_المجتمع"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لعلاج_البخل"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بها كل من الذهب والفضّة., وتعتبر نوع من انواع زكاة الاموال.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"/>
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب"/>
+        <untitled-ontology-158:تدفع_الى rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتزكية_الروح"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لصلاح_المجتمع"/>
+        <untitled-ontology-158:لأدائها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لعلاج_البخل"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة"/>
+        <untitled-ontology-158:لتركها rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد به المال الذي يتملّكه الشخص بعقد المعاوضة قاصداً به الاكتساب والاسترباح. وتعتبر نوع من انواع زكاة الاموال.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتزكية_الروح -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتزكية_الروح">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتكفيّر_الذنوب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتكفيّر_الذنوب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_البلاء -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_البلاء">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_الغضب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_الغضب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_المال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_المال">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لسلب_البركة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لسلب_البركة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لشفاء -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لشفاء">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لصلاح_المجتمع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لصلاح_المجتمع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لعلاج_البخل -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لعلاج_البخل">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للحرمان_من_الرحمة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للحرمان_من_الرحمة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحاربة_الفقر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحاربة_الفقر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحبة_لله -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحبة_لله">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شرطا_لقبول_الصلاة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شرطا_لقبول_الصلاة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_لافطار_في_شهر_رمضان_بعد_الزوال"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الافطار"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الجمع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_القتل"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_تعمد_الافطار"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_قتل_المؤمن"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مخيرة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مرتبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:ناتجة_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الافطار"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الجمع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_القتل"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_تعمد_الافطار"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_قتل_المؤمن"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مخيرة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مرتبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_اللّه -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_اللّه">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_ذمة_الاسلام -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_ذمة_الاسلام">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_رسول_الله -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_رسول_الله">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عقد_النذر_بالله -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عقد_النذر_بالله">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع"/>
+        <untitled-ontology-158:منفذة_على rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_أحد_المواقيت"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الطواف_حول_البيت"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">هي الجزء الاول من حج التمتع اي يؤتى بها قبل الحج.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد بهم العبيد.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين"/>
+        <untitled-ontology-158:يستفيد_من rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة"/>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اعطاء الزكاة الى من لا تجب عليه نفقتهم</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الأيمان</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يصرف اموال الزكاة في الحرام</untitled-ontology-158:required>
+        <untitled-ontology-158:required rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان لا يكون هاشمي</untitled-ontology-158:required>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد به المصالح العامّة للمسلمين، كتعبيد الطرق وبناء الجسور والمستشفيات والمساجد وغيرها مما يحتاج اليه المسلمون.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الافطار -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الافطار">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_البراءة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_البراءة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الجمع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الجمع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_القتل -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_القتل">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <owl:sameAs rdf:resource="https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85)"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_تعمد_الافطار -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_تعمد_الافطار">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_قتل_المؤمن -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_قتل_المؤمن">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_لافطار_في_شهر_رمضان_بعد_الزوال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_لافطار_في_شهر_رمضان_بعد_الزوال">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مخيرة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مخيرة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مرتبة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مرتبة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_معينة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_معينة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الناذر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التمكن"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الصيغة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عقد_النذر_بالله"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ويطلق عليه نذر مجازاة وهو ما عُلّق على أمر؛ وهو إمّا شكراً لنعمة دنيوية أو أخروية وإمّا شكرا لدفع بلية.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الناذر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التمكن"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الصيغة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عقد_النذر_بالله"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو ماكان مطلقاً ولم يعلق على شيء.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الناذر"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التمكن"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الصيغة"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عقد_النذر_بالله"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">وهو ما عُلّق على فعل حرام أو مكروه، زجراً للنفس عن ارتكابها.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحالف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أن_يكون_لفظاً_دالاً_لمعنى_اليمين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الانجاز"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تأديته_بأسم_لله"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_اللّه"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_ذمة_الاسلام"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_رسول_الله"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ما يقرن به الطلب والسؤال ويقصد به حثّ المسؤول على إنجاح المقصود.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"/>
+        <untitled-ontology-158:يؤدى_بواسطة rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحالف"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أن_يكون_لفظاً_دالاً_لمعنى_اليمين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الانجاز"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تأديته_بأسم_لله"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_اللّه"/>
+        <untitled-ontology-158:يشترط_وجوب rdf:resource="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_ذمة_الاسلام"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد به  ما يقع تأكيداً وتحقيقاً لما بنى عليه والتزم به من إيقاع أمر أو تركه في المستقبل.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/ -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC) -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC)"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9 -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9"/>
+    
+
+
+    <!-- https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85) -->
+
+    <owl:NamedIndividual rdf:about="https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85)"/>
+    
+
+
+    <!-- https://arz.wikipedia.org/wiki/ -->
+
+    <owl:NamedIndividual rdf:about="https://arz.wikipedia.org/wiki/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج">
+        <owl:sameAs rdf:resource="https://www.wikidata.org/wiki/Q12183653"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يعتبر من أهمّ الفرائض في الشريعة الإسلاميّة، قال الله تعالى: {وَلِلّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلاً وَمَن كَفَرَ فَإِنَّ الله غَنِيٌّ عَنِ الْعَالَمِينَ}.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تعد من الواجبات التي اهتّم الشارع المقدّس بها، وقد قرنها الله تبارك وتعالى بالصلاة ,وهي احدى الاركان الخمس التي بنية عليها الأسلام.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">يقصد به العلم بالأحكام الشرعية الفرعية وتحديد وظيفة المكلف العلمية بالاضافة الى انه العلم بالشيء والفهم له والفطنة.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">لغة جمعها كفارات، وأصلها الستر وتغطية الشيء، وسميت بذلك لأنّها تستر الخطايا والذنوب الذي ارتكبها بفعله</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
