@@ -1,0 +1,118 @@
+{
+  "@context" : {
+    "الوقف" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف"
+    },
+    "يؤدى_بواسطة" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدى_بواسطة",
+      "@type" : "@id"
+    },
+    "notDesirable" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/notDesirable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "المسلم" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم"
+    },
+    "لأدائها" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لأدائها",
+      "@type" : "@id"
+    },
+    "الحج" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج"
+    },
+    "لتركها" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لتركها",
+      "@type" : "@id"
+    },
+    "منفذة_على" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على",
+      "@type" : "@id"
+    },
+    "العبادات" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات"
+    },
+    "شروط_اليمين" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين"
+    },
+    "الاثار_السلبية" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية"
+    },
+    "الفقه_الاسلامي" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي"
+    },
+    "الاحكام" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاحكام"
+    },
+    "تدفع_الى" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تدفع_الى",
+      "@type" : "@id"
+    },
+    "يؤدي" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدي",
+      "@type" : "@id"
+    },
+    "يستفيد_من" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من",
+      "@type" : "@id"
+    },
+    "العقود" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العقود"
+    },
+    "شروط_الكفارة" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة"
+    },
+    "شروط_الحج" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج"
+    },
+    "الزكاة" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة"
+    },
+    "النذر" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر"
+    },
+    "desirable" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/desirable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ناتجة_من" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من",
+      "@type" : "@id"
+    },
+    "required" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/required",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "الايقاعات" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات"
+    },
+    "اليمين" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين"
+    },
+    "الاثار_الايجابية" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية"
+    },
+    "شروط_الوقف" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف"
+    },
+    "المستفيد" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد"
+    },
+    "شروط_النذر" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "الكفارة" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة"
+    },
+    "يشترط_وجوب" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب",
+      "@type" : "@id"
+    }
+  }
+}

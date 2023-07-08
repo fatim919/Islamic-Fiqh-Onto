@@ -1,0 +1,1619 @@
+@prefix : <http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/> .
+
+<http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تدفع_الى
+:تدفع_الى rdf:type owl:ObjectProperty ;
+          owl:inverseOf :يستفيد_من ;
+          rdfs:domain :الزكاة ;
+          rdfs:range :المستفيد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لأدائها
+:لأدائها rdf:type owl:ObjectProperty ;
+         owl:inverseOf :ناتجة_من ;
+         rdfs:domain :الزكاة ;
+         rdfs:range :الاثار_الايجابية .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/لتركها
+:لتركها rdf:type owl:ObjectProperty ;
+        owl:inverseOf :ناتجة_من ;
+        rdfs:domain :الزكاة ;
+        rdfs:range :الاثار_السلبية .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/منفذة_على
+:منفذة_على rdf:type owl:ObjectProperty ;
+           owl:inverseOf :يشترط_وجوب ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :شروط_الحج
+                                       :شروط_الكفارة
+                                       :شروط_النذر
+                                       :شروط_الوقف
+                                       :شروط_اليمين
+                                     )
+                       ] ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( :الحج
+                                      :الكفارة
+                                      :النذر
+                                      :الوقف
+                                      :اليمين
+                                    )
+                      ] .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ناتجة_من
+:ناتجة_من rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :الاثار_الايجابية
+                                      :الاثار_السلبية
+                                    )
+                      ] ;
+          rdfs:range :الزكاة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدى_بواسطة
+:يؤدى_بواسطة rdf:type owl:ObjectProperty ;
+             owl:inverseOf :يؤدي ;
+             rdfs:domain :الفقه_الاسلامي ;
+             rdfs:range :المسلم .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يؤدي
+:يؤدي rdf:type owl:ObjectProperty ;
+      rdfs:domain :المسلم ;
+      rdfs:range :الفقه_الاسلامي .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يستفيد_من
+:يستفيد_من rdf:type owl:ObjectProperty ;
+           rdfs:domain :المستفيد ;
+           rdfs:range :الزكاة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يشترط_وجوب
+:يشترط_وجوب rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :الحج
+                                        :الكفارة
+                                        :النذر
+                                        :الوقف
+                                        :اليمين
+                                      )
+                        ] ;
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( :شروط_الحج
+                                       :شروط_الكفارة
+                                       :شروط_النذر
+                                       :شروط_الوقف
+                                       :شروط_اليمين
+                                     )
+                       ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/desirable
+:desirable rdf:type owl:DatatypeProperty ;
+           rdfs:domain :المسلم ;
+           rdfs:range xsd:string ;
+           rdfs:comment "اسم الخاصية في اللغة العربية (يستحب له)" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/notDesirable
+:notDesirable rdf:type owl:DatatypeProperty ;
+              rdfs:domain :المسلم ;
+              rdfs:range xsd:string ;
+              rdfs:comment "اسم الخاصية في اللغة العربية (لا يستحب له)" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/required
+:required rdf:type owl:DatatypeProperty ;
+          rdfs:domain :المسلم ;
+          rdfs:range xsd:string ;
+          rdfs:comment "اسم الخاصية في اللغة العربية (يشترط فيه)" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_الايجابية
+:الاثار_الايجابية rdf:type owl:Class ;
+                  rdfs:subClassOf :الزكاة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاثار_السلبية
+:الاثار_السلبية rdf:type owl:Class ;
+                rdfs:subClassOf :الزكاة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاحكام
+:الاحكام rdf:type owl:Class ;
+         rdfs:subClassOf :الفقه_الاسلامي ;
+         rdfs:comment "الحكم الشرعي عبارة عن خطاب الشارع المتعلق بأفعال المكلفين. وتنقسم الأحكام إلى أقسام مختلفة، وأهمها: الأحكام الوضعية والتكليفة. كما تتفرع الأحكام الشرعية إلى أولية وثانوية." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الايقاعات
+:الايقاعات rdf:type owl:Class ;
+           rdfs:subClassOf :الفقه_الاسلامي ;
+           rdfs:comment "الإِيقاع: أوقعه فوقع. وأوقع فلانٌ بفلانٍ ما يكره: أي أحلَّه عليه وفي اصطلاح الفقهاء هو الإنشاء المستقل الذي لا يتوقف صحته ونفوذه على إنشاء مطاوع، فهو في مقابل العقد الذي حقيقته إنشاءان مرتبطان متلازمان" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج
+:الحج rdf:type owl:Class ;
+      rdfs:subClassOf :العبادات ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :يشترط_وجوب ;
+                        owl:someValuesFrom :شروط_الحج
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :منفذة_على ;
+                        owl:allValuesFrom :شروط_الحج
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :يشترط_وجوب ;
+                        owl:allValuesFrom :شروط_الحج
+                      ] .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة
+:الزكاة rdf:type owl:Class ;
+        rdfs:subClassOf :العبادات ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :لأدائها ;
+                          owl:someValuesFrom :الاثار_الايجابية
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :لتركها ;
+                          owl:someValuesFrom :الاثار_السلبية
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :ناتجة_من ;
+                          owl:allValuesFrom :الاثار_الايجابية
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :ناتجة_من ;
+                          owl:allValuesFrom :الاثار_السلبية
+                        ] .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العبادات
+:العبادات rdf:type owl:Class ;
+          rdfs:subClassOf :الفقه_الاسلامي ;
+          rdfs:comment "هو مصطلح دينيّ فقهيّ، له علاقة بتلك الأعمال الخاصّة الّتي أوجبها المولى تعالى على عبده،كما أنّ للعبادات معناً لغويّاً أعم من المعنى الفقهيّ الاصطلاحيّ، وهو مطلق الطّاعة مع الخضوع والتّذلّل لله" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العقود
+:العقود rdf:type owl:Class ;
+        rdfs:subClassOf :الفقه_الاسلامي ;
+        rdfs:comment "هو ارتباط الإيجاب الصادر من أحد العاقدين بقبول الآخر على وجه يظهر أثره في المعقود عليه . في اللغة هو الربط والشد والإحكام والتوثيق والضمان والعهد، والجمع بين أطراف الشي‌ء." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي
+:الفقه_الاسلامي rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :يؤدى_بواسطة ;
+                                  owl:someValuesFrom :المسلم
+                                ] ;
+                owl:disjointUnionOf ( :الاحكام
+                                      :الايقاعات
+                                      :العبادات
+                                      :العقود
+                                    ) .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة
+:الكفارة rdf:type owl:Class ;
+         rdfs:subClassOf :الاحكام ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :يشترط_وجوب ;
+                           owl:someValuesFrom :شروط_الكفارة
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :منفذة_على ;
+                           owl:allValuesFrom :شروط_الكفارة
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :يشترط_وجوب ;
+                           owl:allValuesFrom :شروط_الكفارة
+                         ] .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المستفيد
+:المستفيد rdf:type owl:Class ;
+          rdfs:subClassOf :المسلم ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :يستفيد_من ;
+                            owl:someValuesFrom :الزكاة
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :تدفع_الى ;
+                            owl:allValuesFrom :الزكاة
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :يستفيد_من ;
+                            owl:allValuesFrom :الزكاة
+                          ] ;
+          rdfs:comment "هم الاشخاص الذين تحق لهم الزكاة." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المسلم
+:المسلم rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النذر
+:النذر rdf:type owl:Class ;
+       rdfs:subClassOf :الايقاعات ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :يشترط_وجوب ;
+                         owl:someValuesFrom :شروط_النذر
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :منفذة_على ;
+                         owl:allValuesFrom :شروط_النذر
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :يشترط_وجوب ;
+                         owl:allValuesFrom :شروط_النذر
+                       ] ;
+       rdfs:comment "هو أن يجعل الشخص لله تعالى على ذمته فعل شيء أو تركه، بحيث يقوله بصيغة يجب التقيد بها وشروط خاصة تتعلّق بالنذر وبالشخص الناذر." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف
+:الوقف rdf:type owl:Class ;
+       rdfs:subClassOf :العقود ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :يشترط_وجوب ;
+                         owl:someValuesFrom :شروط_الوقف
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :منفذة_على ;
+                         owl:allValuesFrom :شروط_الوقف
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :يشترط_وجوب ;
+                         owl:allValuesFrom :شروط_الوقف
+                       ] .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اليمين
+:اليمين rdf:type owl:Class ;
+        rdfs:subClassOf :الايقاعات ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :يشترط_وجوب ;
+                          owl:someValuesFrom :شروط_اليمين
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :منفذة_على ;
+                          owl:allValuesFrom :شروط_اليمين
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :يشترط_وجوب ;
+                          owl:allValuesFrom :شروط_اليمين
+                        ] ;
+        rdfs:comment "هو الحلف بالله تعالى، أو بأحد أسمائه المختصه به" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الحج
+:شروط_الحج rdf:type owl:Class ;
+           rdfs:subClassOf :الحج .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الكفارة
+:شروط_الكفارة rdf:type owl:Class ;
+              rdfs:subClassOf :الكفارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_النذر
+:شروط_النذر rdf:type owl:Class ;
+            rdfs:subClassOf :النذر .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_الوقف
+:شروط_الوقف rdf:type owl:Class ;
+            rdfs:subClassOf :الوقف .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شروط_اليمين
+:شروط_اليمين rdf:type owl:Class ;
+             rdfs:subClassOf :اليمين .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أداء_العمرة_والحج_في_اشهر_الحج
+:أداء_العمرة_والحج_في_اشهر_الحج rdf:type owl:NamedIndividual ,
+                                         :شروط_الحج ;
+                                :منفذة_على :حج_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أطعام_ستّين_مسكين
+:أطعام_ستّين_مسكين rdf:type owl:NamedIndividual ,
+                            :شروط_الكفارة ;
+                   :منفذة_على :كفارة_الافطار ,
+                              :كفارة_الجمع ,
+                              :كفارة_القتل ,
+                              :كفارة_النذر ,
+                              :كفارة_تعمد_الافطار ,
+                              :كفارة_قتل_المؤمن ,
+                              :كفارة_مخيرة ,
+                              :كفارة_مرتبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/أن_يكون_لفظاً_دالاً_لمعنى_اليمين
+:أن_يكون_لفظاً_دالاً_لمعنى_اليمين rdf:type owl:NamedIndividual ,
+                                           :شروط_اليمين ;
+                                  :منفذة_على :الأيمان_الصادقة ,
+                                             :يمبن_المناشدة ,
+                                             :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ابن_السبيل
+:ابن_السبيل rdf:type owl:NamedIndividual ,
+                     :المستفيد ;
+            owl:sameAs <https://www.wikidata.org/wiki/Q12486192> ;
+            :يستفيد_من :زكاة_الاموال ,
+                       :زكاة_الغلات_الاربع ,
+                       :زكاة_الفطرة ,
+                       :زكاة_الماشية ,
+                       :زكاة_النقدين ,
+                       :زكاة_اموال_التجارة ;
+            :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                      "الأيمان" ,
+                      "ان لا يصرف اموال الزكاة في الحرام" ,
+                      "ان لا يكون هاشمي" ;
+            rdfs:comment "وهو المسافر الذي نفدت نفقته أو تلفت راحلته ولا يتمكّن معه من الرجوع إلى بلده وإن كان غنيّاً فيه." .
+
+
+###  https://www.wikidata.org/wiki/Q12486192
+<https://www.wikidata.org/wiki/Q12486192> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_العمرة_والحج_في_سنة_واحدة
+:اداء_العمرة_والحج_في_سنة_واحدة rdf:type owl:NamedIndividual ,
+                                         :شروط_الحج ;
+                                :منفذة_على :حج_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اداء_صلاة_الطواف
+:اداء_صلاة_الطواف rdf:type owl:NamedIndividual ,
+                           :شروط_الحج ;
+                  :منفذة_على :حج_الأفراد ,
+                             :حج_التمتع ,
+                             :حج_القران ,
+                             :عمرة_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اطعام_عشرة_مساكين
+:اطعام_عشرة_مساكين rdf:type owl:NamedIndividual ,
+                            :شروط_الكفارة ;
+                   :منفذة_على :كفارة_البراءة ,
+                              :كفارة_الترتيب_التخيير ,
+                              :كفارة_النذر ,
+                              :كفارة_اليمين ,
+                              :كفارة_حنث_اليمين ,
+                              :كفارة_لافطار_في_شهر_رمضان_بعد_الزوال ,
+                              :كفارة_معينة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/اكساء_عشرة_مساكين
+:اكساء_عشرة_مساكين rdf:type owl:NamedIndividual ,
+                            :شروط_الكفارة ;
+                   :منفذة_على :كفارة_الترتيب_التخيير ,
+                              :كفارة_النذر ,
+                              :كفارة_اليمين ,
+                              :كفارة_حنث_اليمين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الصادقة
+:الأيمان_الصادقة rdf:type owl:NamedIndividual ,
+                          :اليمين ;
+                 :يؤدى_بواسطة :الحالف ;
+                 :يشترط_وجوب :أن_يكون_لفظاً_دالاً_لمعنى_اليمين ,
+                             :الانجاز ,
+                             :تأديته_بأسم_لله ,
+                             :عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين ,
+                             :عدم_الحلف_بالبراءة_من_اللّه ,
+                             :عدم_الحلف_بالبراءة_من_ذمة_الاسلام ,
+                             :عدم_الحلف_بالبراءة_من_رسول_الله ;
+                 rdfs:comment "يقصد بها ما يقع تأكيداً وتحقيقاً للإخبار عن تحقّق أمرٍ أو عدم تحقّقه في الماضي أو الحال أو الاستقبال, وهي ليست محرّمة ولكنّها مكروهة بحدّ ذاتها، فيكره للمكلّف أن يحلف على شيء صدقاً أو أن يحلف على صدق كلامه." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الأيمان_الكاذبة
+:الأيمان_الكاذبة rdf:type owl:NamedIndividual ,
+                          :اليمين ;
+                 rdfs:comment "يقصد بها ما يقع تأكيداً وتحقيقاً للإخبار عن تحقّق أمرٍ أو عدم تحقّقه في الماضي أو الحال أو الاستقبال, وهي محرّمة، بل قد تعتبر من المعاصي الكبيرة." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_أحد_المواقيت
+:الإحرام_من_أحد_المواقيت rdf:type owl:NamedIndividual ,
+                                  :شروط_الحج ;
+                         :منفذة_على :حج_الأفراد ,
+                                    :حج_القران ,
+                                    :عمرة_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الإحرام_من_مكّة
+:الإحرام_من_مكّة rdf:type owl:NamedIndividual ,
+                          :شروط_الحج ;
+                 :منفذة_على :حج_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الاقباض
+:الاقباض rdf:type owl:NamedIndividual ,
+                  :شروط_الوقف ;
+         :منفذة_على :الوقف_الخاص ,
+                    :الوقف_العام ;
+         rdfs:comment "إنَّ القبض شرط في صحة الوقف، فلو وقف ولم يقبض ثمّ مات كان ميراثاً." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الانجاز
+:الانجاز rdf:type owl:NamedIndividual ,
+                  :شروط_اليمين ;
+         :منفذة_على :الأيمان_الصادقة ,
+                    :يمبن_المناشدة ,
+                    :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التمكن
+:التمكن rdf:type owl:NamedIndividual ,
+                 :شروط_النذر ;
+        :منفذة_على :نذر_بِرْ ,
+                   :نذر_تبرع ,
+                   :نذر_زجر .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/التنجيز
+:التنجيز rdf:type owl:NamedIndividual ,
+                  :شروط_الوقف ;
+         :منفذة_على :الوقف_الخاص ,
+                    :الوقف_العام ;
+         rdfs:comment "يقصد به ان لابد من انشاء الوقف منجزا بدون أي تردد ولا تعليق على شئ متوقع في المستقبل." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحاج
+:الحاج rdf:type owl:NamedIndividual ,
+                :المسلم ;
+       owl:sameAs <https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC)> ;
+       :يؤدي :حج_الأفراد ,
+             :حج_التمتع ,
+             :حج_القران ,
+             :عمرة_التمتع ;
+       :desirable "اخذ الشارب" ,
+                  "اداء الاحرام بعد فريضة الظهر" ,
+                  "ازالة شعر الأبطين" ,
+                  "ازالة شعر العانة" ,
+                  "التلبية بالصيغة" ,
+                  "التلفظ بنية الاحرام مقارنة للتلبية" ,
+                  "الغسل" ,
+                  "تسريح شعر الراس" ,
+                  "تسريح شعر اللحية" ,
+                  "تقليم الاظافر" ,
+                  "تكرار التلبية حال الاحرام" ,
+                  "تنظيف الجسد" ,
+                  "ثوب الاحرام من القطن" ,
+                  "دعاء الغسل" ,
+                  "دعاء عند لبس ثوب الاحرام" ,
+                  "رفع الصوت بالتلبية للرجال" ;
+       :notDesirable "استعمال الحناء قبل الاحرام" ,
+                     "الاحرام في الثوب الاسود" ,
+                     "النوم على الفراش الاصفر" ,
+                     "النوم على الوسادة الصفراء" ,
+                     "النوم في الثياب المعلمة" ,
+                     "النوم في الثياب الوسخة" ,
+                     "تلبية من يناديه" ,
+                     "دخول الحمام" ;
+       :required "البلوغ" ,
+                 "الحرية" ,
+                 "العقل" ,
+                 "المقدرة المعيشية بعد الرجوع" ,
+                 "النفقة" ,
+                 "امتلاك الوقت" ,
+                 "ان يكون مقتدر ماليا" ,
+                 "تخلية السرب" ,
+                 "صحيح البدن" ;
+       rdfs:comment "هو الشخص الذي يذهب لزيارة مكان مقدس و تأدية بعض المناسك و العبادات فيه ويكون سفر طبيعي إما مشياً على الأقدام كما كان يجري في السابق أو بركوب وسيلة نقل، والحج موجود في معظم الديانات" .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC)
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحالف
+:الحالف rdf:type owl:NamedIndividual ,
+                 :المسلم ;
+        :يؤدي :الأيمان_الصادقة ,
+              :يمبن_المناشدة ,
+              :يمين_العقد ;
+        :required "البلوغ" ,
+                  "التمكن" ,
+                  "الجد في اليمين" ,
+                  "العقل" ,
+                  "القصد" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الحج
+:الحج rdf:type owl:NamedIndividual ;
+      owl:sameAs <https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85> ,
+                 <https://www.wikidata.org/wiki/Q12183653> .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85
+
+###  https://www.wikidata.org/wiki/Q12183653
+<https://www.wikidata.org/wiki/Q12183653> rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الدوام
+:الدوام rdf:type owl:NamedIndividual ,
+                 :شروط_الوقف ;
+        :منفذة_على :الوقف_الخاص ,
+                   :الوقف_العام ;
+        rdfs:comment "وهو مقتضى الوقف بحسب الطبع، والتوقيت خلاف مقتضى طبيعة الوقف." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الزكاة
+:الزكاة rdf:type owl:NamedIndividual ;
+        owl:sameAs <https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9> .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/السعي
+:السعي rdf:type owl:NamedIndividual ,
+                :شروط_الحج ;
+       :منفذة_على :حج_الأفراد ,
+                  :حج_التمتع ,
+                  :حج_القران ,
+                  :عمرة_التمتع ;
+       rdfs:comment "يقصد به السعي بين الصقا والمروة" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الصيغة
+:الصيغة rdf:type owl:NamedIndividual ,
+                 :شروط_النذر ;
+        :منفذة_على :نذر_بِرْ ,
+                   :نذر_تبرع ,
+                   :نذر_زجر ;
+        rdfs:comment "حتى ينعقد النذر لا بد من تلفظه بصيغة شرعية محددة وهي بأن يقول الناذر: «لله عليّ أن أفعل كذا»" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الطواف_حول_البيت
+:الطواف_حول_البيت rdf:type owl:NamedIndividual ,
+                           :شروط_الحج ;
+                  :منفذة_على :عمرة_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/العاملون_عليها
+:العاملون_عليها rdf:type owl:NamedIndividual ,
+                         :المستفيد ;
+                :يستفيد_من :زكاة_الاموال ,
+                           :زكاة_الغلات_الاربع ,
+                           :زكاة_الفطرة ,
+                           :زكاة_الماشية ,
+                           :زكاة_النقدين ,
+                           :زكاة_اموال_التجارة ;
+                :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                          "الأيمان" ,
+                          "ان لا يصرف اموال الزكاة في الحرام" ,
+                          "ان لا يكون هاشمي" ;
+                rdfs:comment "يقصد بهم العاملزن عليها من قِبل النبيّ (صلّى الله عليه وآله) أو الإمام (عليه السلام) أو الحاكم الشرعي أو نائبه." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الغارمون
+:الغارمون rdf:type owl:NamedIndividual ,
+                   :المستفيد ;
+          :يستفيد_من :زكاة_الاموال ,
+                     :زكاة_الغلات_الاربع ,
+                     :زكاة_الفطرة ,
+                     :زكاة_الماشية ,
+                     :زكاة_النقدين ,
+                     :زكاة_اموال_التجارة ;
+          :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                    "الأيمان" ,
+                    "ان لا يصرف اموال الزكاة في الحرام" ,
+                    "ان لا يكون هاشمي" ;
+          rdfs:comment "يقصد بهم من كان عليهم دين وعجزوا عن أدائه جاز أداء دينهم من الزكاة." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقراء
+:الفقراء rdf:type owl:NamedIndividual ,
+                  :المستفيد ;
+         :يستفيد_من :زكاة_الاموال ,
+                    :زكاة_الغلات_الاربع ,
+                    :زكاة_الفطرة ,
+                    :زكاة_الماشية ,
+                    :زكاة_النقدين ,
+                    :زكاة_اموال_التجارة ;
+         :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                   "الأيمان" ,
+                   "ان لا يصرف اموال الزكاة في الحرام" ,
+                   "ان لا يكون هاشمي" ;
+         rdfs:comment "يقصد بهم من لا يملكوا مؤونة سنتهم اللائقة بحالهم لنفسهم وعائلتهم لا بالفعل ولا بالقوّة." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الفقه_الاسلامي
+:الفقه_الاسلامي rdf:type owl:NamedIndividual ;
+                owl:sameAs <https://ar.wikipedia.org/wiki/> ,
+                           <https://arz.wikipedia.org/wiki/> .
+
+
+###  https://ar.wikipedia.org/wiki/
+
+###  https://arz.wikipedia.org/wiki/
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الكفارة
+:الكفارة rdf:type owl:NamedIndividual ;
+         owl:sameAs <https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9> .
+
+
+###  https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المؤلفة_قلوبهم
+:المؤلفة_قلوبهم rdf:type owl:NamedIndividual ,
+                         :المستفيد ;
+                :يستفيد_من :زكاة_الاموال ,
+                           :زكاة_الغلات_الاربع ,
+                           :زكاة_الفطرة ,
+                           :زكاة_الماشية ,
+                           :زكاة_النقدين ,
+                           :زكاة_اموال_التجارة ;
+                :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                          "الأيمان" ,
+                          "ان لا يصرف اموال الزكاة في الحرام" ,
+                          "ان لا يكون هاشمي" ;
+                rdfs:comment "يقصد بهم طائفة من الكفّار يميلون إلى الإسلام أو يعينون المسلمين بإعطائهم الزكاة، أو يُؤمَن بذلك من شرّهم وفتنتهم." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المبيت_في_منى
+:المبيت_في_منى rdf:type owl:NamedIndividual ,
+                        :شروط_الحج ;
+               :منفذة_على :حج_الأفراد ,
+                          :حج_التمتع ,
+                          :حج_القران .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المساكين
+:المساكين rdf:type owl:NamedIndividual ,
+                   :المستفيد ;
+          :يستفيد_من :زكاة_الاموال ,
+                     :زكاة_الغلات_الاربع ,
+                     :زكاة_الفطرة ,
+                     :زكاة_الماشية ,
+                     :زكاة_النقدين ,
+                     :زكاة_اموال_التجارة ;
+          :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                    "الأيمان" ,
+                    "ان لا يصرف اموال الزكاة في الحرام" ,
+                    "ان لا يكون هاشمي" ;
+          rdfs:comment "يقصد بهم من تكون حالتهم أسوأ  من الفقراء كمن لا يملك قوته اليومي.." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/المكلف_بزكاة
+:المكلف_بزكاة rdf:type owl:NamedIndividual ,
+                       :المسلم ;
+              :يؤدي :زكاة_الاموال ,
+                    :زكاة_الغلات_الاربع ,
+                    :زكاة_الفطرة ,
+                    :زكاة_الماشية ,
+                    :زكاة_النقدين ,
+                    :زكاة_اموال_التجارة ;
+              :required "البلوغ" ,
+                        "العقل" ,
+                        "الغنى" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الناذر
+:الناذر rdf:type owl:NamedIndividual ,
+                 :المسلم ;
+        :يؤدي :نذر_بِرْ ,
+              :نذر_تبرع ,
+              :نذر_زجر ;
+        :required " الاختيار" ,
+                  "البلوغ" ,
+                  "العقل" ,
+                  "القصد" ,
+                  "ان لا يكون محجور عليه" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النحر
+:النحر rdf:type owl:NamedIndividual ,
+                :شروط_الحج ;
+       :منفذة_على :حج_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/النية
+:النية rdf:type owl:NamedIndividual ,
+                :شروط_الحج ;
+       :منفذة_على :حج_الأفراد ,
+                  :حج_التمتع ,
+                  :حج_القران .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الواقف
+:الواقف rdf:type owl:NamedIndividual ,
+                 :المسلم ;
+        :يؤدي :الوقف_الخاص ,
+              :الوقف_العام ;
+        :required "الاختيار" ,
+                  "البلوغ" ,
+                  "العقل" ,
+                  "القصد" .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_الخاص
+:الوقف_الخاص rdf:type owl:NamedIndividual ,
+                      :الوقف ;
+             :يؤدى_بواسطة :الواقف ;
+             :يشترط_وجوب :الاقباض ,
+                         :التنجيز ,
+                         :الدوام ;
+             rdfs:comment "وهو ما كان وقفاً على شخص أو أشخاص كالوقف على أولاده و ذرّيته." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقف_العام
+:الوقف_العام rdf:type owl:NamedIndividual ,
+                      :الوقف ;
+             :يؤدى_بواسطة :الواقف ;
+             :يشترط_وجوب :الاقباض ,
+                         :التنجيز ,
+                         :الدوام ;
+             rdfs:comment "وهو ما كان على جهة ومصلحة عامة كالمساجد والقناطر والخانات، أو على عنوان عام كالفقراء والأيتام ونحوهما." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_المزدلفة
+:الوقوف_في_المزدلفة rdf:type owl:NamedIndividual ,
+                             :شروط_الحج ;
+                    :منفذة_على :حج_الأفراد ,
+                               :حج_التمتع ,
+                               :حج_القران .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/الوقوف_في_عرفات
+:الوقوف_في_عرفات rdf:type owl:NamedIndividual ,
+                          :شروط_الحج ;
+                 :منفذة_على :حج_الأفراد ,
+                            :حج_التمتع ,
+                            :حج_القران .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تأديته_بأسم_لله
+:تأديته_بأسم_لله rdf:type owl:NamedIndividual ,
+                          :شروط_اليمين ;
+                 :منفذة_على :الأيمان_الصادقة ,
+                            :يمبن_المناشدة ,
+                            :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تطبيق_لعمود_الدين
+:تطبيق_لعمود_الدين rdf:type owl:NamedIndividual ,
+                            :الاثار_الايجابية ;
+                   :ناتجة_من :زكاة_الاموال ,
+                             :زكاة_الغلات_الاربع ,
+                             :زكاة_الفطرة ,
+                             :زكاة_الماشية ,
+                             :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/تقصير_الشعر
+:تقصير_الشعر rdf:type owl:NamedIndividual ,
+                      :شروط_الحج ;
+             :منفذة_على :حج_الأفراد ,
+                        :حج_التمتع ,
+                        :حج_القران ,
+                        :عمرة_التمتع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_الأفراد
+:حج_الأفراد rdf:type owl:NamedIndividual ,
+                     :الحج ;
+            :يؤدى_بواسطة :الحاج ;
+            :يشترط_وجوب :اداء_صلاة_الطواف ,
+                        :الإحرام_من_أحد_المواقيت ,
+                        :السعي ,
+                        :المبيت_في_منى ,
+                        :النية ,
+                        :الوقوف_في_المزدلفة ,
+                        :الوقوف_في_عرفات ,
+                        :تقصير_الشعر ,
+                        :حلق_الشعر ,
+                        :رمي_الجمرات ;
+            rdfs:comment "وهو الحج الذي يقع على عاتق من سكن مكة، ومن يكون الفاصل بين منزله وبين مكّة أقلّ من ستة عشر فرسخاً." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_التمتع
+:حج_التمتع rdf:type owl:NamedIndividual ,
+                    :الحج ;
+           owl:sameAs <https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9> ;
+           :يؤدى_بواسطة :الحاج ;
+           :يشترط_وجوب :أداء_العمرة_والحج_في_اشهر_الحج ,
+                       :اداء_العمرة_والحج_في_سنة_واحدة ,
+                       :اداء_صلاة_الطواف ,
+                       :الإحرام_من_مكّة ,
+                       :السعي ,
+                       :المبيت_في_منى ,
+                       :النحر ,
+                       :النية ,
+                       :الوقوف_في_المزدلفة ,
+                       :الوقوف_في_عرفات ,
+                       :تقصير_الشعر ,
+                       :حلق_الشعر ,
+                       :رمي_الجمرات ;
+           rdfs:comment "وهو الحج الذي يقع على من كان البعد بين أهله ومكّة  أكثر من ستة عشر فرسخاً." .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حج_القران
+:حج_القران rdf:type owl:NamedIndividual ,
+                    :الحج ;
+           :يؤدى_بواسطة :الحاج ;
+           :يشترط_وجوب :اداء_صلاة_الطواف ,
+                       :الإحرام_من_أحد_المواقيت ,
+                       :السعي ,
+                       :المبيت_في_منى ,
+                       :النية ,
+                       :الوقوف_في_المزدلفة ,
+                       :الوقوف_في_عرفات ,
+                       :تقصير_الشعر ,
+                       :حلق_الشعر ,
+                       :رمي_الجمرات ;
+           rdfs:comment "وهو الحج الذي يقع على أهل مكّة, ومن يكون البعد بين أهله ومكة أقلّ من ستة عشر فرسخا.ً." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/حلق_الشعر
+:حلق_الشعر rdf:type owl:NamedIndividual ,
+                    :شروط_الحج ;
+           :منفذة_على :حج_الأفراد ,
+                      :حج_التمتع ,
+                      :حج_القران .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/رمي_الجمرات
+:رمي_الجمرات rdf:type owl:NamedIndividual ,
+                      :شروط_الحج ;
+             :منفذة_على :حج_الأفراد ,
+                        :حج_التمتع ,
+                        :حج_القران .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الاموال
+:زكاة_الاموال rdf:type owl:NamedIndividual ,
+                       :الزكاة ;
+              :تدفع_الى :ابن_السبيل ,
+                        :العاملون_عليها ,
+                        :الغارمون ,
+                        :الفقراء ,
+                        :المؤلفة_قلوبهم ,
+                        :المساكين ,
+                        :في_الرقاب ,
+                        :في_سبيل_الله ;
+              :لأدائها :تطبيق_لعمود_الدين ,
+                       :سببا_لتخفيف_الحساب ,
+                       :سببا_لتزكية_الروح ,
+                       :سببا_لحفظ_الاموال ,
+                       :سببا_لدفع_البلاء ,
+                       :سببا_لدفع_الغضب ,
+                       :سببا_لزيادة_الرزق ,
+                       :سببا_لزيادة_المال ,
+                       :سببا_لشفاء ,
+                       :سببا_لصلاح_المجتمع ,
+                       :سببا_لعلاج_البخل ,
+                       :سببا_لمحاربة_الفقر ,
+                       :سببا_لمحبة_لله ,
+                       :شرطا_لقبول_الصلاة ;
+              :لتركها :سببا_في_تضاعف_الإنفاق_الخاطئ ,
+                      :سببا_في_عدم_قبول_الصلاة ,
+                      :سببا_لتضاعف_الخسارة ,
+                      :سببا_لسلب_البركة ,
+                      :سببا_للحرمان_من_الرحمة ,
+                      :سببا_للسرقة ,
+                      :سببا_للموت_دون_دين_الإسلام ;
+              :يؤدى_بواسطة :المكلف_بزكاة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الغلات_الاربع
+:زكاة_الغلات_الاربع rdf:type owl:NamedIndividual ,
+                             :الزكاة ;
+                    :تدفع_الى :ابن_السبيل ,
+                              :العاملون_عليها ,
+                              :الغارمون ,
+                              :الفقراء ,
+                              :المؤلفة_قلوبهم ,
+                              :المساكين ,
+                              :في_الرقاب ,
+                              :في_سبيل_الله ;
+                    :لأدائها :تطبيق_لعمود_الدين ,
+                             :سببا_لتخفيف_الحساب ,
+                             :سببا_لتزكية_الروح ,
+                             :سببا_لتكفيّر_الذنوب ,
+                             :سببا_لحفظ_الاموال ,
+                             :سببا_لدفع_البلاء ,
+                             :سببا_لدفع_الغضب ,
+                             :سببا_لزيادة_الرزق ,
+                             :سببا_لمحبة_لله ;
+                    :لتركها :سببا_في_تضاعف_الإنفاق_الخاطئ ,
+                            :سببا_في_عدم_قبول_الصلاة ,
+                            :سببا_لتضاعف_الخسارة ,
+                            :سببا_لسلب_البركة ,
+                            :سببا_للحرمان_من_الرحمة ,
+                            :سببا_للسرقة ,
+                            :سببا_للموت_دون_دين_الإسلام ,
+                            :ضرر_على_الاموال ;
+                    :يؤدى_بواسطة :المكلف_بزكاة ;
+                    rdfs:comment "يقصد بها  الحنطة والشعير والتمر والزبيب.,وتعتبر نوع من انواع زكاة الاموال." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الفطرة
+:زكاة_الفطرة rdf:type owl:NamedIndividual ,
+                      :الزكاة ;
+             :تدفع_الى :ابن_السبيل ,
+                       :العاملون_عليها ,
+                       :الغارمون ,
+                       :الفقراء ,
+                       :المؤلفة_قلوبهم ,
+                       :المساكين ,
+                       :في_الرقاب ,
+                       :في_سبيل_الله ;
+             :لأدائها :تطبيق_لعمود_الدين ,
+                      :سببا_لتخفيف_الحساب ,
+                      :سببا_لتكفيّر_الذنوب ,
+                      :سببا_لحفظ_الاموال ,
+                      :سببا_لمحاربة_الفقر ,
+                      :سببا_لمحبة_لله ;
+             :لتركها :سببا_في_عدم_قبول_الصلاة ,
+                     :سببا_لسلب_البركة ,
+                     :سببا_للموت_دون_دين_الإسلام ,
+                     :ضرر_على_الاموال ;
+             :يؤدى_بواسطة :المكلف_بزكاة ;
+             rdfs:comment "يقصد بها الزكاة التي يجب تاديتها في ايام عيد الفطر المبارك." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_الماشية
+:زكاة_الماشية rdf:type owl:NamedIndividual ,
+                       :الزكاة ;
+              owl:sameAs <https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85> ;
+              :تدفع_الى :ابن_السبيل ,
+                        :العاملون_عليها ,
+                        :الغارمون ,
+                        :الفقراء ,
+                        :المؤلفة_قلوبهم ,
+                        :المساكين ,
+                        :في_الرقاب ,
+                        :في_سبيل_الله ;
+              :لأدائها :تطبيق_لعمود_الدين ,
+                       :سببا_لحفظ_الاموال ,
+                       :سببا_لزيادة_الرزق ,
+                       :سببا_لمحاربة_الفقر ,
+                       :شرطا_لقبول_الصلاة ;
+              :لتركها :سببا_لتضاعف_الخسارة ,
+                      :سببا_للسرقة ,
+                      :ضرر_على_الاموال ;
+              :يؤدى_بواسطة :المكلف_بزكاة ;
+              rdfs:comment "يقصد بها  الغنم بقسميها المعز والضأن، والإبل، والبقر ومنه الجاموس, وتعتبر نوع من انواع زكاة الاموال." .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_النقدين
+:زكاة_النقدين rdf:type owl:NamedIndividual ,
+                       :الزكاة ;
+              owl:sameAs <https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86> ;
+              :تدفع_الى :ابن_السبيل ,
+                        :العاملون_عليها ,
+                        :الغارمون ,
+                        :الفقراء ,
+                        :المؤلفة_قلوبهم ,
+                        :المساكين ,
+                        :في_الرقاب ,
+                        :في_سبيل_الله ;
+              :لأدائها :سببا_لتخفيف_الحساب ,
+                       :سببا_لدفع_الغضب ,
+                       :سببا_لزيادة_الرزق ,
+                       :سببا_لزيادة_المال ,
+                       :سببا_لصلاح_المجتمع ,
+                       :سببا_لعلاج_البخل ;
+              :لتركها :سببا_في_تضاعف_الإنفاق_الخاطئ ,
+                      :سببا_في_عدم_قبول_الصلاة ,
+                      :سببا_للسرقة ,
+                      :ضرر_على_الاموال ;
+              :يؤدى_بواسطة :المكلف_بزكاة ;
+              rdfs:comment "يقصد بها كل من الذهب والفضّة., وتعتبر نوع من انواع زكاة الاموال." .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/زكاة_اموال_التجارة
+:زكاة_اموال_التجارة rdf:type owl:NamedIndividual ,
+                             :الزكاة ;
+                    owl:sameAs <https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9> ;
+                    :تدفع_الى :ابن_السبيل ,
+                              :العاملون_عليها ,
+                              :الغارمون ,
+                              :الفقراء ,
+                              :المؤلفة_قلوبهم ,
+                              :المساكين ,
+                              :في_الرقاب ,
+                              :في_سبيل_الله ;
+                    :لأدائها :تطبيق_لعمود_الدين ,
+                             :سببا_لتزكية_الروح ,
+                             :سببا_لحفظ_الاموال ,
+                             :سببا_لصلاح_المجتمع ,
+                             :سببا_لعلاج_البخل ;
+                    :لتركها :سببا_في_تضاعف_الإنفاق_الخاطئ ,
+                            :سببا_في_عدم_قبول_الصلاة ,
+                            :سببا_لتضاعف_الخسارة ,
+                            :سببا_للموت_دون_دين_الإسلام ;
+                    :يؤدى_بواسطة :المكلف_بزكاة ;
+                    rdfs:comment "يقصد به المال الذي يتملّكه الشخص بعقد المعاوضة قاصداً به الاكتساب والاسترباح. وتعتبر نوع من انواع زكاة الاموال." .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_تضاعف_الإنفاق_الخاطئ
+:سببا_في_تضاعف_الإنفاق_الخاطئ rdf:type owl:NamedIndividual ,
+                                       :الاثار_السلبية ;
+                              :ناتجة_من :زكاة_الاموال ,
+                                        :زكاة_الغلات_الاربع ,
+                                        :زكاة_النقدين ,
+                                        :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_في_عدم_قبول_الصلاة
+:سببا_في_عدم_قبول_الصلاة rdf:type owl:NamedIndividual ,
+                                  :الاثار_السلبية ;
+                         :ناتجة_من :زكاة_الاموال ,
+                                   :زكاة_الغلات_الاربع ,
+                                   :زكاة_الفطرة ,
+                                   :زكاة_النقدين ,
+                                   :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتخفيف_الحساب
+:سببا_لتخفيف_الحساب rdf:type owl:NamedIndividual ,
+                             :الاثار_الايجابية ;
+                    :ناتجة_من :زكاة_الاموال ,
+                              :زكاة_الغلات_الاربع ,
+                              :زكاة_الفطرة ,
+                              :زكاة_النقدين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتزكية_الروح
+:سببا_لتزكية_الروح rdf:type owl:NamedIndividual ,
+                            :الاثار_الايجابية ;
+                   :ناتجة_من :زكاة_الاموال ,
+                             :زكاة_الغلات_الاربع ,
+                             :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتضاعف_الخسارة
+:سببا_لتضاعف_الخسارة rdf:type owl:NamedIndividual ,
+                              :الاثار_السلبية ;
+                     :ناتجة_من :زكاة_الاموال ,
+                               :زكاة_الغلات_الاربع ,
+                               :زكاة_الماشية ,
+                               :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لتكفيّر_الذنوب
+:سببا_لتكفيّر_الذنوب rdf:type owl:NamedIndividual ,
+                              :الاثار_الايجابية ;
+                     :ناتجة_من :زكاة_الاموال ,
+                               :زكاة_الغلات_الاربع ,
+                               :زكاة_الفطرة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لحفظ_الاموال
+:سببا_لحفظ_الاموال rdf:type owl:NamedIndividual ,
+                            :الاثار_الايجابية ;
+                   :ناتجة_من :زكاة_الاموال ,
+                             :زكاة_الغلات_الاربع ,
+                             :زكاة_الفطرة ,
+                             :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_البلاء
+:سببا_لدفع_البلاء rdf:type owl:NamedIndividual ,
+                           :الاثار_الايجابية ;
+                  :ناتجة_من :زكاة_الاموال ,
+                            :زكاة_الغلات_الاربع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لدفع_الغضب
+:سببا_لدفع_الغضب rdf:type owl:NamedIndividual ,
+                          :الاثار_الايجابية ;
+                 :ناتجة_من :زكاة_الاموال ,
+                           :زكاة_الغلات_الاربع ,
+                           :زكاة_النقدين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_الرزق
+:سببا_لزيادة_الرزق rdf:type owl:NamedIndividual ,
+                            :الاثار_الايجابية ;
+                   :ناتجة_من :زكاة_الاموال ,
+                             :زكاة_الغلات_الاربع ,
+                             :زكاة_الماشية .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لزيادة_المال
+:سببا_لزيادة_المال rdf:type owl:NamedIndividual ,
+                            :الاثار_الايجابية ;
+                   :ناتجة_من :زكاة_الاموال ,
+                             :زكاة_النقدين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لسلب_البركة
+:سببا_لسلب_البركة rdf:type owl:NamedIndividual ,
+                           :الاثار_السلبية ;
+                  :ناتجة_من :زكاة_الاموال ,
+                            :زكاة_الغلات_الاربع ,
+                            :زكاة_الفطرة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لشفاء
+:سببا_لشفاء rdf:type owl:NamedIndividual ,
+                     :الاثار_الايجابية ;
+            :ناتجة_من :زكاة_الاموال .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لصلاح_المجتمع
+:سببا_لصلاح_المجتمع rdf:type owl:NamedIndividual ,
+                             :الاثار_الايجابية ;
+                    :ناتجة_من :زكاة_الاموال ,
+                              :زكاة_النقدين ,
+                              :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لعلاج_البخل
+:سببا_لعلاج_البخل rdf:type owl:NamedIndividual ,
+                           :الاثار_الايجابية ;
+                  :ناتجة_من :زكاة_الاموال ,
+                            :زكاة_النقدين ,
+                            :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للحرمان_من_الرحمة
+:سببا_للحرمان_من_الرحمة rdf:type owl:NamedIndividual ,
+                                 :الاثار_السلبية ;
+                        :ناتجة_من :زكاة_الاموال ,
+                                  :زكاة_الغلات_الاربع .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للسرقة
+:سببا_للسرقة rdf:type owl:NamedIndividual ,
+                      :الاثار_السلبية ;
+             :ناتجة_من :زكاة_الاموال ,
+                       :زكاة_الغلات_الاربع ,
+                       :زكاة_الماشية ,
+                       :زكاة_النقدين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_للموت_دون_دين_الإسلام
+:سببا_للموت_دون_دين_الإسلام rdf:type owl:NamedIndividual ,
+                                     :الاثار_السلبية ;
+                            :ناتجة_من :زكاة_الاموال ,
+                                      :زكاة_الغلات_الاربع ,
+                                      :زكاة_الفطرة ,
+                                      :زكاة_اموال_التجارة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحاربة_الفقر
+:سببا_لمحاربة_الفقر rdf:type owl:NamedIndividual ,
+                             :الاثار_الايجابية ;
+                    :ناتجة_من :زكاة_الاموال ,
+                              :زكاة_الفطرة ,
+                              :زكاة_الماشية .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/سببا_لمحبة_لله
+:سببا_لمحبة_لله rdf:type owl:NamedIndividual ,
+                         :الاثار_الايجابية ;
+                :ناتجة_من :زكاة_الاموال ,
+                          :زكاة_الغلات_الاربع ,
+                          :زكاة_الفطرة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/شرطا_لقبول_الصلاة
+:شرطا_لقبول_الصلاة rdf:type owl:NamedIndividual ,
+                            :الاثار_الايجابية ;
+                   :ناتجة_من :زكاة_الاموال ,
+                             :زكاة_الماشية .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_ثلاثة_أيّام_متتالية
+:صيام_ثلاثة_أيّام_متتالية rdf:type owl:NamedIndividual ,
+                                   :شروط_الكفارة ;
+                          :منفذة_على :كفارة_الترتيب_التخيير ,
+                                     :كفارة_النذر ,
+                                     :كفارة_اليمين ,
+                                     :كفارة_حنث_اليمين ,
+                                     :كفارة_لافطار_في_شهر_رمضان_بعد_الزوال .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/صيام_شهرين_متتابعين
+:صيام_شهرين_متتابعين rdf:type owl:NamedIndividual ,
+                              :شروط_الكفارة ;
+                     :منفذة_على :كفارة_الافطار ,
+                                :كفارة_الجمع ,
+                                :كفارة_القتل ,
+                                :كفارة_النذر ,
+                                :كفارة_تعمد_الافطار ,
+                                :كفارة_قتل_المؤمن ,
+                                :كفارة_مخيرة ,
+                                :كفارة_مرتبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/ضرر_على_الاموال
+:ضرر_على_الاموال rdf:type owl:NamedIndividual ,
+                          :الاثار_السلبية ;
+                 :ناتجة_من :زكاة_الغلات_الاربع ,
+                           :زكاة_الفطرة ,
+                           :زكاة_الماشية ,
+                           :زكاة_النقدين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عتق_رقبة
+:عتق_رقبة rdf:type owl:NamedIndividual ,
+                   :شروط_الكفارة ;
+          :منفذة_على :كفارة_الافطار ,
+                     :كفارة_الترتيب_التخيير ,
+                     :كفارة_الجمع ,
+                     :كفارة_القتل ,
+                     :كفارة_النذر ,
+                     :كفارة_اليمين ,
+                     :كفارة_تعمد_الافطار ,
+                     :كفارة_حنث_اليمين ,
+                     :كفارة_قتل_المؤمن ,
+                     :كفارة_مخيرة ,
+                     :كفارة_مرتبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين
+:عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين rdf:type owl:NamedIndividual ,
+                                                :شروط_اليمين ;
+                                       :منفذة_على :الأيمان_الصادقة ,
+                                                  :يمبن_المناشدة ,
+                                                  :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_اللّه
+:عدم_الحلف_بالبراءة_من_اللّه rdf:type owl:NamedIndividual ,
+                                      :شروط_اليمين ;
+                             :منفذة_على :الأيمان_الصادقة ,
+                                        :يمبن_المناشدة ,
+                                        :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_ذمة_الاسلام
+:عدم_الحلف_بالبراءة_من_ذمة_الاسلام rdf:type owl:NamedIndividual ,
+                                            :شروط_اليمين ;
+                                   :منفذة_على :الأيمان_الصادقة ,
+                                              :يمبن_المناشدة ,
+                                              :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عدم_الحلف_بالبراءة_من_رسول_الله
+:عدم_الحلف_بالبراءة_من_رسول_الله rdf:type owl:NamedIndividual ,
+                                          :شروط_اليمين ;
+                                 :منفذة_على :الأيمان_الصادقة ,
+                                            :يمبن_المناشدة ,
+                                            :يمين_العقد .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عقد_النذر_بالله
+:عقد_النذر_بالله rdf:type owl:NamedIndividual ,
+                          :شروط_النذر ;
+                 :منفذة_على :نذر_بِرْ ,
+                            :نذر_تبرع ,
+                            :نذر_زجر .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/عمرة_التمتع
+:عمرة_التمتع rdf:type owl:NamedIndividual ,
+                      :الحج ;
+             :يؤدى_بواسطة :الحاج ;
+             :يشترط_وجوب :اداء_صلاة_الطواف ,
+                         :الإحرام_من_أحد_المواقيت ,
+                         :السعي ,
+                         :الطواف_حول_البيت ,
+                         :تقصير_الشعر ;
+             rdfs:comment "هي الجزء الاول من حج التمتع اي يؤتى بها قبل الحج." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_الرقاب
+:في_الرقاب rdf:type owl:NamedIndividual ,
+                    :المستفيد ;
+           :يستفيد_من :زكاة_الاموال ,
+                      :زكاة_الغلات_الاربع ,
+                      :زكاة_الفطرة ,
+                      :زكاة_الماشية ,
+                      :زكاة_النقدين ,
+                      :زكاة_اموال_التجارة ;
+           :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                     "الأيمان" ,
+                     "ان لا يصرف اموال الزكاة في الحرام" ,
+                     "ان لا يكون هاشمي" ;
+           rdfs:comment "يقصد بهم العبيد." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/في_سبيل_الله
+:في_سبيل_الله rdf:type owl:NamedIndividual ,
+                       :المستفيد ;
+              :يستفيد_من :زكاة_الاموال ,
+                         :زكاة_الغلات_الاربع ,
+                         :زكاة_الفطرة ,
+                         :زكاة_الماشية ,
+                         :زكاة_النقدين ,
+                         :زكاة_اموال_التجارة ;
+              :required "اعطاء الزكاة الى من لا تجب عليه نفقتهم" ,
+                        "الأيمان" ,
+                        "ان لا يصرف اموال الزكاة في الحرام" ,
+                        "ان لا يكون هاشمي" ;
+              rdfs:comment "يقصد به المصالح العامّة للمسلمين، كتعبيد الطرق وبناء الجسور والمستشفيات والمساجد وغيرها مما يحتاج اليه المسلمون." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الافطار
+:كفارة_الافطار rdf:type owl:NamedIndividual ,
+                        :الكفارة ;
+               :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                           :صيام_شهرين_متتابعين ,
+                           :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_البراءة
+:كفارة_البراءة rdf:type owl:NamedIndividual ,
+                        :الكفارة ;
+               :يشترط_وجوب :اطعام_عشرة_مساكين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الترتيب_التخيير
+:كفارة_الترتيب_التخيير rdf:type owl:NamedIndividual ,
+                                :الكفارة ;
+                       :يشترط_وجوب :اطعام_عشرة_مساكين ,
+                                   :اكساء_عشرة_مساكين ,
+                                   :صيام_ثلاثة_أيّام_متتالية ,
+                                   :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_الجمع
+:كفارة_الجمع rdf:type owl:NamedIndividual ,
+                      :الكفارة ;
+             :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                         :صيام_شهرين_متتابعين ,
+                         :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_القتل
+:كفارة_القتل rdf:type owl:NamedIndividual ,
+                      :الكفارة ;
+             :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                         :صيام_شهرين_متتابعين ,
+                         :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_النذر
+:كفارة_النذر rdf:type owl:NamedIndividual ,
+                      :الكفارة ;
+             owl:sameAs <https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85)> ;
+             :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                         :اطعام_عشرة_مساكين ,
+                         :اكساء_عشرة_مساكين ,
+                         :صيام_ثلاثة_أيّام_متتالية ,
+                         :صيام_شهرين_متتابعين ,
+                         :عتق_رقبة .
+
+
+###  https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85)
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_اليمين
+:كفارة_اليمين rdf:type owl:NamedIndividual ,
+                       :الكفارة ;
+              :يشترط_وجوب :اطعام_عشرة_مساكين ,
+                          :اكساء_عشرة_مساكين ,
+                          :صيام_ثلاثة_أيّام_متتالية ,
+                          :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_تعمد_الافطار
+:كفارة_تعمد_الافطار rdf:type owl:NamedIndividual ,
+                             :الكفارة ;
+                    :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                                :صيام_شهرين_متتابعين ,
+                                :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_حنث_اليمين
+:كفارة_حنث_اليمين rdf:type owl:NamedIndividual ,
+                           :الكفارة ;
+                  :يشترط_وجوب :اطعام_عشرة_مساكين ,
+                              :اكساء_عشرة_مساكين ,
+                              :صيام_ثلاثة_أيّام_متتالية ,
+                              :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_قتل_المؤمن
+:كفارة_قتل_المؤمن rdf:type owl:NamedIndividual ,
+                           :الكفارة ;
+                  :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                              :صيام_شهرين_متتابعين ,
+                              :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_لافطار_في_شهر_رمضان_بعد_الزوال
+:كفارة_لافطار_في_شهر_رمضان_بعد_الزوال rdf:type owl:NamedIndividual ,
+                                               :الكفارة ;
+                                      :يشترط_وجوب :اطعام_عشرة_مساكين ,
+                                                  :صيام_ثلاثة_أيّام_متتالية .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مخيرة
+:كفارة_مخيرة rdf:type owl:NamedIndividual ,
+                      :الكفارة ;
+             :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                         :صيام_شهرين_متتابعين ,
+                         :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_مرتبة
+:كفارة_مرتبة rdf:type owl:NamedIndividual ,
+                      :الكفارة ;
+             :يشترط_وجوب :أطعام_ستّين_مسكين ,
+                         :صيام_شهرين_متتابعين ,
+                         :عتق_رقبة .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/كفارة_معينة
+:كفارة_معينة rdf:type owl:NamedIndividual ,
+                      :الكفارة ;
+             :يشترط_وجوب :اطعام_عشرة_مساكين .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_بِرْ
+:نذر_بِرْ rdf:type owl:NamedIndividual ,
+                   :النذر ;
+          :يؤدى_بواسطة :الناذر ;
+          :يشترط_وجوب :التمكن ,
+                      :الصيغة ,
+                      :عقد_النذر_بالله ;
+          rdfs:comment "ويطلق عليه نذر مجازاة وهو ما عُلّق على أمر؛ وهو إمّا شكراً لنعمة دنيوية أو أخروية وإمّا شكرا لدفع بلية." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_تبرع
+:نذر_تبرع rdf:type owl:NamedIndividual ,
+                   :النذر ;
+          :يؤدى_بواسطة :الناذر ;
+          :يشترط_وجوب :التمكن ,
+                      :الصيغة ,
+                      :عقد_النذر_بالله ;
+          rdfs:comment "وهو ماكان مطلقاً ولم يعلق على شيء." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/نذر_زجر
+:نذر_زجر rdf:type owl:NamedIndividual ,
+                  :النذر ;
+         :يؤدى_بواسطة :الناذر ;
+         :يشترط_وجوب :التمكن ,
+                     :الصيغة ,
+                     :عقد_النذر_بالله ;
+         rdfs:comment "وهو ما عُلّق على فعل حرام أو مكروه، زجراً للنفس عن ارتكابها." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمبن_المناشدة
+:يمبن_المناشدة rdf:type owl:NamedIndividual ,
+                        :اليمين ;
+               :يؤدى_بواسطة :الحالف ;
+               :يشترط_وجوب :أن_يكون_لفظاً_دالاً_لمعنى_اليمين ,
+                           :الانجاز ,
+                           :تأديته_بأسم_لله ,
+                           :عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين ,
+                           :عدم_الحلف_بالبراءة_من_اللّه ,
+                           :عدم_الحلف_بالبراءة_من_ذمة_الاسلام ,
+                           :عدم_الحلف_بالبراءة_من_رسول_الله ;
+               rdfs:comment "ما يقرن به الطلب والسؤال ويقصد به حثّ المسؤول على إنجاح المقصود." .
+
+
+###  http://www.semanticweb.org/asus/ontologies/2023/2/untitled-ontology-158/يمين_العقد
+:يمين_العقد rdf:type owl:NamedIndividual ,
+                     :اليمين ;
+            :يؤدى_بواسطة :الحالف ;
+            :يشترط_وجوب :أن_يكون_لفظاً_دالاً_لمعنى_اليمين ,
+                        :الانجاز ,
+                        :تأديته_بأسم_لله ,
+                        :عدم_الحلف_بالبراءة_من_الأئمة_الطاهرين ,
+                        :عدم_الحلف_بالبراءة_من_اللّه ,
+                        :عدم_الحلف_بالبراءة_من_ذمة_الاسلام ;
+            rdfs:comment "يقصد به  ما يقع تأكيداً وتحقيقاً لما بنى عليه والتزم به من إيقاع أمر أو تركه في المستقبل." .
+
+
+###  https://ar.wikipedia.org/wiki/
+<https://ar.wikipedia.org/wiki/> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9
+<https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A7%D9%83_%D9%81%D9%8A_%D8%A7%D9%84%D8%AD%D8%AC#%D8%A7%D9%84%D8%AA%D9%85%D8%AA%D8%B9> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85
+<https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC)
+<https://ar.wikipedia.org/wiki/%D8%AD%D8%A7%D8%AC_(%D8%AD%D8%AC)> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9
+<https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85
+<https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%A3%D9%86%D8%B9%D8%A7%D9%85> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9
+<https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86
+<https://ar.wikipedia.org/wiki/%D8%B2%D9%83%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%82%D8%AF%D9%8A%D9%86> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9
+<https://ar.wikipedia.org/wiki/%D9%83%D9%81%D8%A7%D8%B1%D8%A9> rdf:type owl:NamedIndividual .
+
+
+###  https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85)
+<https://ar.wikipedia.org/wiki/%D9%86%D8%B0%D8%B1_(%D8%A5%D8%B3%D9%84%D8%A7%D9%85)> rdf:type owl:NamedIndividual .
+
+
+###  https://arz.wikipedia.org/wiki/
+<https://arz.wikipedia.org/wiki/> rdf:type owl:NamedIndividual .
+
+
+###  https://www.wikidata.org/wiki/Q12183653
+<https://www.wikidata.org/wiki/Q12183653> rdf:type owl:NamedIndividual .
+
+
+###  https://www.wikidata.org/wiki/Q12486192
+<https://www.wikidata.org/wiki/Q12486192> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:الحج rdfs:comment "يعتبر من أهمّ الفرائض في الشريعة الإسلاميّة، قال الله تعالى: {وَلِلّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلاً وَمَن كَفَرَ فَإِنَّ الله غَنِيٌّ عَنِ الْعَالَمِينَ}." .
+
+
+:الزكاة rdfs:comment "تعد من الواجبات التي اهتّم الشارع المقدّس بها، وقد قرنها الله تبارك وتعالى بالصلاة ,وهي احدى الاركان الخمس التي بنية عليها الأسلام." .
+
+
+:الفقه_الاسلامي rdfs:comment "يقصد به العلم بالأحكام الشرعية الفرعية وتحديد وظيفة المكلف العلمية بالاضافة الى انه العلم بالشيء والفهم له والفطنة." .
+
+
+:الكفارة rdfs:comment "لغة جمعها كفارات، وأصلها الستر وتغطية الشيء، وسميت بذلك لأنّها تستر الخطايا والذنوب الذي ارتكبها بفعله" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
