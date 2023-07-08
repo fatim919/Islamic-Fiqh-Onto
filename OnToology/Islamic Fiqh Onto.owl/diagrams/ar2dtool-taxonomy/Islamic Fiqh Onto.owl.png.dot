@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "untitled-ontology-158:اليمين" "untitled-ontology-158:الحج" "untitled-ontology-158:الاثار_السلبية" "untitled-ontology-158:العقود" "untitled-ontology-158:الفقه_الاسلامي" "untitled-ontology-158:الوقف" "untitled-ontology-158:المستفيد" "untitled-ontology-158:الزكاة" "untitled-ontology-158:الكفارة" "untitled-ontology-158:شروط_الحج" "untitled-ontology-158:شروط_اليمين" "untitled-ontology-158:النذر" "untitled-ontology-158:العبادات" "untitled-ontology-158:الايقاعات" "untitled-ontology-158:شروط_الوقف" "untitled-ontology-158:الاحكام" "untitled-ontology-158:المسلم" "untitled-ontology-158:الاثار_الايجابية" "untitled-ontology-158:شروط_النذر" "untitled-ontology-158:شروط_الكفارة" ; /*classes style*/
+	"untitled-ontology-158:الاثار_الايجابية" -> "untitled-ontology-158:الزكاة" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:المستفيد" -> "untitled-ontology-158:المسلم" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:شروط_الوقف" -> "untitled-ontology-158:الوقف" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:شروط_اليمين" -> "untitled-ontology-158:اليمين" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الزكاة" -> "untitled-ontology-158:العبادات" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:النذر" -> "untitled-ontology-158:الايقاعات" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الاثار_السلبية" -> "untitled-ontology-158:الزكاة" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الحج" -> "untitled-ontology-158:العبادات" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:اليمين" -> "untitled-ontology-158:الايقاعات" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الوقف" -> "untitled-ontology-158:العقود" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:العقود" -> "untitled-ontology-158:الفقه_الاسلامي" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:العبادات" -> "untitled-ontology-158:الفقه_الاسلامي" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الايقاعات" -> "untitled-ontology-158:الفقه_الاسلامي" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:شروط_الحج" -> "untitled-ontology-158:الحج" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الاحكام" -> "untitled-ontology-158:الفقه_الاسلامي" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:شروط_الكفارة" -> "untitled-ontology-158:الكفارة" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:شروط_النذر" -> "untitled-ontology-158:النذر" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-158:الكفارة" -> "untitled-ontology-158:الاحكام" [ label = "rdfs:subClassOf" ];
+
+}
